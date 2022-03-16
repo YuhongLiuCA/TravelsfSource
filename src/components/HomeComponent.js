@@ -132,51 +132,43 @@ class Home extends Component {
                 <div class="row">  
                 <div key={this.state.mainitems[1].image} className="col-12 col-md-5 mt-2 mx-5" >
                     <Card style={{"margin-right": "25px","border-style":"none", display:"flex","align-items": "center"}}>
-                       <a href="/spring">
-                       <img  src={this.state.mainitems[1].image} alt={this.state.mainitems[1].name} style={{"border-radius": "10px",width: "400px"}} />  
-                       </a>
-                       <a href="/spring" style={{textDecoration: "none"}}>
-                       <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[1].name}</CardTitle> 
-                       </a> 
-                       <CardLink href="/spring">{this.state.mainitems[1].description}</CardLink>   
+                       <Link to="/spring" from="/home" style={{textDecoration: "none"}}>
+                        <img  src={this.state.mainitems[1].image} alt={this.state.mainitems[1].name} style={{"border-radius": "10px",width: "400px"}} />  
+                        <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[1].name}</CardTitle> 
+                        <CardLink>{this.state.mainitems[1].description}</CardLink>  
+                       </Link>              
+                        
                     </Card>
                 </div>
 
                 <div key={this.state.mainitems[2].image} className="col-12 col-md-5 mt-2 mx-5" >
                     <Card style={{"margin-right": "25px","border-style":"none", display:"flex","align-items": "center"}}>  
-                       <a href="/summer"> 
-                       <img  src={this.state.mainitems[2].image} alt={this.state.mainitems[2].name} style={{"border-radius": "10px",width: "400px"}}/>                         
-                       </a> 
-                       <a href="/summer" style={{textDecoration: "none"}}>
-                       <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[2].name}</CardTitle>
-                       </a>
-                       <CardLink href="/summer">{this.state.mainitems[2].description}</CardLink>
+                       <Link to="/summer" from="/home" style={{textDecoration: "none"}}>
+                        <img  src={this.state.mainitems[2].image} alt={this.state.mainitems[2].name} style={{"border-radius": "10px",width: "400px"}}/>                         
+                        <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[2].name}</CardTitle>
+                        <CardLink>{this.state.mainitems[2].description}</CardLink>
+                       </Link>
                     </Card>
                 </div>
 
                 <div key={this.state.mainitems[3].image} className="col-12 col-md-5 mt-2 mb-2 mx-5" >
                     <Card style={{"margin-right": "25px","border-style":"none", display:"flex","align-items": "center"}}> 
-                       <a href="/autumn">   
-                       <img  src={this.state.mainitems[3].image} alt={this.state.mainitems[3].name} style={{"border-radius": "10px",width: "400px"}} />
-                       </a>
-                       <a href="/autumn" style={{textDecoration: "none"}}>
-                       <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[3].name}</CardTitle>  
-                       </a>
-                       <CardLink href="/autumn">{this.state.mainitems[3].description}</CardLink>
+                        <Link to="/autumn" from="/home" style={{textDecoration: "none"}}>
+                            <img  src={this.state.mainitems[3].image} alt={this.state.mainitems[3].name} style={{"border-radius": "10px",width: "400px"}} />
+                            <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[3].name}</CardTitle>  
+                            <CardLink>{this.state.mainitems[3].description}</CardLink>
+                        </Link>
                     </Card>
                 </div>
 
                 <div key={this.state.mainitems[4].image} className="col-12 col-md-5 mt-2 mb-2 mx-5" >
                     <Card style={{"margin-right": "25px","border-style":"none", display:"flex","align-items": "center"}}>
-                       <a href="/winter"> 
-                       <img  src={this.state.mainitems[4].image} alt={this.state.mainitems[4].name} style={{"border-radius": "10px",width: "400px"}}/>                      
-                       </a>    
-                       <a href="/winter" style={{textDecoration: "none"}}>
-                       <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[4].name}</CardTitle>                           
-                       </a>
-                       <CardLink href="/winter">{this.state.mainitems[4].description}</CardLink>                           
+                        <Link to="/winter" from="/home" style={{textDecoration: "none"}}>
+                            <img  src={this.state.mainitems[4].image} alt={this.state.mainitems[4].name} style={{"border-radius": "10px",width: "400px"}}/>                      
+                            <CardTitle tag="h4" style={{"font-weight": "bold", color: "blue", textDecoration: "none"}}>{this.state.mainitems[4].name}</CardTitle>                           
+                            <CardLink href="/winter">{this.state.mainitems[4].description}</CardLink>  
+                        </Link>                       
                     </Card>
-                    
                 </div>
                 </div>
                 
